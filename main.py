@@ -1212,6 +1212,10 @@ def main():
   👨‍💻 Developer: {DEVELOPER}
 {'='*56}
 """)
+    # Bot start karne ke liye
+import botsys
+botsys.start_bot(PORT)
+
     app.run(host="0.0.0.0", port=PORT, debug=False, threaded=True)
 
 if __name__ == "__main__":

@@ -81,7 +81,8 @@ DEVELOPER_URL  = os.environ.get("DEVELOPER_URL", "https://t.me/exodus_own3r")
 CONTACT        = os.environ.get("CONTACT_USERNAME", "exodus_own3r").lstrip("@")
 CONTACT_URL    = f"https://t.me/{CONTACT}"
 
-PORT       = int(os.environ.get("PORT", os.environ.get("SERVER_PORT", 0.0.0.0)))
+PORT       = int(os.environ.get("PORT", os.environ.get("SERVER_PORT", 5000)))
+HOST       = "0.0.0.0"
 BASE_URL   = os.environ.get("BASE_URL", f"http://localhost:{PORT}").strip().rstrip("/")
 SECRET_KEY = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "exodus_bomber_bot")
